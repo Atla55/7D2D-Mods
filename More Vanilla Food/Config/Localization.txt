@@ -1,45 +1,45 @@
 Key,Source,Context,Changes,English
-ATBerryTeaDesc,items,Food,New,A warm healing tea made from blueberries and snowberries,,,,,
+ATBerryTeaDesc,items,Food,New,A warm healing tea made from blueberries and snowberries
 
-ATMixedTeaDesc,items,Food,New,A cool refreshing mixed herbal tea that helps protect against the cold,,,,,
+ATMixedTeaDesc,items,Food,New,A cool refreshing mixed herbal tea that helps protect against the cold
 
-ATIcedCoffeeDesc,items,Food,New,A cool energising iced coffee that helps protect against the cold whilst remaining just as hydrating as the hot counterpart,,,,,
+ATIcedCoffeeDesc,items,Food,New,A cool energising iced coffee that helps protect against the cold whilst remaining just as hydrating as the hot counterpart
 
-ATYuccaChipsDesc,items,Food,New,A handful of hearty wedge cut yucca chips,,,,,
+ATYuccaChipsDesc,items,Food,New,A handful of hearty wedge cut yucca chips
 
-ATHashbrownDesc,items,Food,New,A small triangle of shredded fried potato. A nice snack,,,,,
+ATHashbrownDesc,items,Food,New,A small triangle of shredded fried potato. A nice snack
 
-ATMashPotatoDesc,items,Food,New,This hefty pot of silky smooth mash potato could be a meal on it's own,,,,,
+ATMashPotatoDesc,items,Food,New,This hefty pot of silky smooth mash potato could be a meal on it's own
 
-ATCornGritsDesc,items,Food,New,A warm pot of boiled corn grits with animal fat,,,,,
+ATCornGritsDesc,items,Food,New,A warm pot of boiled corn grits with animal fat
 
-ATBlueberryJamDesc,items,Food,New,Sweet blueberry jam made from rendered fruits. Maybe too sweet on it's own,,,,,
+ATBlueberryJamDesc,items,Food,New,Sweet blueberry jam made from rendered fruits. Maybe too sweet on it's own
 
-ATYuccaJamDesc,items,Food,New,Surprisingly savory whilst still being sweet. Yucca jam is made from rendered down yucca fruit,,,,,
+ATYuccaJamDesc,items,Food,New,Surprisingly savory whilst still being sweet. Yucca jam is made from rendered down yucca fruit
 
-ATEggSaladDesc,items,Food,New,A basic egg salad made from boiled eggs. Boiled potato and oil dressing,,,,,
+ATEggSaladDesc,items,Food,New,A basic egg salad made from boiled eggs. Boiled potato and oil dressing
 
-ATFriedMeatDesc,items,Food,New,Meat that has been fried in a cornmeal coating,,,,,
+ATFriedMeatDesc,items,Food,New,Meat that has been fried in a cornmeal coating
 
-ATCornChipsDesc,items,Food,New,Crispy fried corn chips that make for a nice snack between bashing skulls in,,,,,
+ATCornChipsDesc,items,Food,New,Crispy fried corn chips that make for a nice snack between bashing skulls in
 
-ATBBJamSandwichDesc,items,Food,New,A simple cornbread sandwich with a sweet blueberry jam filling to help recover from a long day,,,,,
+ATBBJamSandwichDesc,items,Food,New,A simple cornbread sandwich with a sweet blueberry jam filling to help recover from a long day
 
-ATYuccaJamSandwichDesc,items,Food,New,A simple cornbread sandwich with a savory yucca jam filling that helps get rid of even the strongest hunger pangs,,,,,
+ATYuccaJamSandwichDesc,items,Food,New,A simple cornbread sandwich with a savory yucca jam filling that helps get rid of even the strongest hunger pangs
 
-ATCoffeeCakeDesc,items,Food,New,This cake offers the energising properties of coffee whilst still being delicious,,,,,
+ATCoffeeCakeDesc,items,Food,New,This cake offers the energising properties of coffee whilst still being delicious
 
-ATMushroomPieDesc,items,Food,New,Savory and buttery pie crust filled to the brim with mushrooms,,,,,
+ATMushroomPieDesc,items,Food,New,Savory and buttery pie crust filled to the brim with mushrooms
 
-ATMeatAndBeerPieDesc,items,Food,New,Rich and savory pie crust with a meat and beer filling. Truly a feast fit for the best of the best,,,,, 
+ATMeatAndBeerPieDesc,items,Food,New,Rich and savory pie crust with a meat and beer filling. Truly a feast fit for the best of the best 
 
-ATFriedMushroomsDesc,items,Food,New,Whole mushrooms coated in cornmeal and fried. A very filling snack,,,,,
+ATFriedMushroomsDesc,items,Food,New,Whole mushrooms coated in cornmeal and fried. A very filling snack
 
-ATFriedEggDesc,items,Food,New,A simple sunny side up fried egg. The main component of any good breakfast,,,,,
+ATFriedEggDesc,items,Food,New,A simple sunny side up fried egg. The main component of any good breakfast
 
-ATFrenchToastDesc,items,Food,New,Egg soaked cornbread that has been fried. Simple yet tasty,,,,,
+ATFrenchToastDesc,items,Food,New,Egg soaked cornbread that has been fried. Simple yet tasty
 
-ATHoneyGlazedMeatDesc,items,Food,New,Roasted meat with a deep honey glaze covering it,,,,,
+ATHoneyGlazedMeatDesc,items,Food,New,Roasted meat with a deep honey glaze covering it
 
 
 
