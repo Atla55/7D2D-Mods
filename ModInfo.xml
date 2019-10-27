@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<xml>
+		<ModInfo>
+			<Name value="More Vanilla Food"/>
+			<Description value="Adds many more food and drink items based off vanilla items."/>
+			<Author value="Atlas"/>
+			<Version value="A18" />
+
+			<Website value=""/>
+		</ModInfo>
+	</xml>

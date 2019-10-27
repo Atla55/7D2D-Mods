@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='1,5']/@tags">,Yucca Chips,Hashbrown,Corn Chips,Fried Egg</append>
+	
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='2,5']/@tags">,Berry Tea,Iced Mixed Tea,Iced Coffee,Fried Meat,Fried Mushrooms,French Toast</append>
+	
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='3,5']/@tags">,Corn Grits,Blueberry Jam,Yucca Jam,Egg Salad,Honey Glazed Meat</append>
+	
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='4,5']/@tags">,Mashed Potato,Coffee Cake,Mushroom Pie,Meat and Beer Pie</append>
+	
+	<!--Food recipes added to loot table-->
+	
+	<append xpath="/lootgroup[@name='farmingCookingRecipes']">
+	<item name="Berry Tea Recipe"/>
+	<item name="Iced Mixed Tea Recipe"/>
+	<item name="Iced Coffee Recipe"/>
+	<item name="Yucca Chips Recipe"/>
+	<item name="Hashbrown Recipe"/>
+	<item name="Mashed Potato Recipe"/>
+	<item name="Corn Grits Recipe"/>
+	<item name="Blueberry Jam Recipe"/>
+	<item name="Yucca Jam Recipe"/>
+	<item name="Egg Salad Recipe"/>
+	<item name="Fried Meat Recipe"/>
+	<item name="Corn Chips Recipe"/>
+	<item name="Coffee Cake Recipe"/>
+	<item name="Mushroom Pie Recipe"/>
+	<item name="Meat and Beer Pie Recipe"/>
+	<item name="Fried Mushrooms Recipe"/>
+	<item name="Fried Egg Recipe"/>
+	<item name="French Toast Recipe"/>
+	<item name="Honey Glazed Meat Recipe"/>
+	</append>
+</configs>
