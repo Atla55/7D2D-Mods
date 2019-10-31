@@ -41,10 +41,45 @@ ATFrenchToastDesc,items,Food,New,Egg soaked cornbread that has been fried. Simpl
 
 ATHoneyGlazedMeatDesc,items,Food,New,Roasted meat with a deep honey glaze covering it
 
+ATBlueberrySodaDesc,items,Food,New,A refreshing carbonated soda made from blueberries
 
+ATCarbonatedWaterDesc,items,Food,New,Carbonated water that is both refreshing and useful for digestion
 
+ATKvassSodaDesc,items,Food,New,Kvass soda made from fermented cornbread to make it carbonated. A very basic soda
 
+ATVodkaDesc,items,Food,New,Fermented and distilled potato water that will improve your bartering. This stuff packs a punch
 
+ATSnowberryGinDesc,items,Food,New,A dry gin made from snowberries that will boost your ability to break blocks
 
+ATBlueberrySpongeDesc,items,Food,New,Fluffy sponge cake with a very sweet blueberry jam filling. Filling for both the body and soul.
 
+ATYuccaSpongeDesc,items,Food,New,Sweet and fluffy sponge cake with a somewhat savory yucca jam filling. Extremely filling
 
+ATCustardPieDesc,items,Food,New,Buttery pie crust filled to the brim with a dense custard.
+
+ATEnergyTabletDesc,items,Food,New,Energy tablets are great for getting you out of sticky situations. However you can get addicted to them.
+
+ATFudgeDesc,items,Food,New,Sugary fudge that melts in the mouth and rots away the teeth. You didn't need those molars anyway
+
+ATPopcornDesc,items,Food,New,Popped corn - the movie-goers favourite. A basic snack between meals
+
+ATRockCandyDesc,items,Food,New,Unflavoured candy made mostly from sugar. Will give you quite the sugar rush
+
+ATRockCandyBlueberryDesc,items,Food,New,Blueberry flavoured rock candy that tastes good and will give you a sugar rush
+
+ATRockCandySnowberryDesc,items,Food,New,Snowberry infused rock candy that will help with digestion and give you a sugar rush
+
+ATSpongeCakeDesc,items,Food,New,Dense sponge cake with sugar icing atop it.
+
+ATSugarExtractDesc,items,Food,New,You'd have to be pretty deperate to eat raw sugar. Used in soda, candies and cakes
+
+ATSnowberryGinDrunkDesc,buffs,Buff,New,A strong taste. You are feeling destructive.
+ATVodkaDrunkDesc,buffs,Buff,New,That stuff burns. You feel more talkative
+
+ATSugarRushDesc,buffs,Buff,New,A slight rush from the amount of sugar you just ate. This allows you to slightly run faster
+ATSugarRushName,buffs,Buff,New,Sugar Rush
+ATSugarRushTooltip,buffs,Buff,New,That was a lot of sugar.
+
+ATEnergyTabletDesc,buffs,Buff,New,You can run faster. reload slightly quicker and become less exhausted. 
+ATEnergyTabletName,buffs,Buff,New,Energy Rush
+ATEnergyTabletTooltip,buffs,Buff,New,What a rush!

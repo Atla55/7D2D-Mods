@@ -31,8 +31,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="20"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="10"/>
 				<display_value name="foodHealthAmount" value="10" />
-				<display_value name="staminaAmount" value=".15" />
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+				<display_value name="dStaminaRegen" value=".15" />
 			</effect_group>
 
 			<effect_group tiered="false">
@@ -40,7 +39,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffExtinguishFire"/>
 			</effect_group>
 		</item>		
-        <!--===Item Recipe==-->	
+		<!--===Item Recipe==-->	
 		<item name="Berry Tea Recipe">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="EconomicValue" value="200"/>
@@ -83,7 +82,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffYuccaJuiceSmoothieDuration" operation="add" value="903"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffYuccaJuiceSmoothieDuration" operation="set" value="2703">
 					<requirement name="CVarCompare" cvar="$buffYuccaJuiceSmoothieDuration" operation="GT" value="2703"/></triggered_effect>
-				<display_value name="staminaAmount" value=".15" />
+				<display_value name="dStaminaRegen" value=".15" />
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables,buffYuccaJuiceSmoothie"/>
 			</effect_group>
 
@@ -92,7 +91,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffExtinguishFire"/>
 			</effect_group>
 		</item>
-        <!--===Item Recipe==-->
+		<!--===Item Recipe==-->
 		<item name="Iced Mixed Tea Recipe">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="EconomicValue" value="200"/>
@@ -130,7 +129,7 @@
 				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
 
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="24"/>
-				<display_value name="staminaAmount" value=".3" />
+				<display_value name="dStaminaRegen" value=".3" />
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables, buffCoffee, buffYuccaJuiceSmoothie"/>
 				<display_value name="dHypothermalResist" value="30"/>
 				<display_value name="dDuration" value="903"/>
@@ -144,7 +143,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffExtinguishFire"/>
 			</effect_group>
 		</item>
-        <!--===Item Recipe==-->
+		<!--===Item Recipe==-->
 		<item name="Iced Coffee Recipe">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="EconomicValue" value="220"/>
@@ -156,7 +155,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="55"/>
 			</effect_group>
 		</item>
-		
+
 		<!--Food Stuffs-->
 
 		<item name="Yucca Chips">
@@ -185,7 +184,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 			</effect_group>
 		</item>
-        <!--===Item Recipe==-->
+		<!--===Item Recipe==-->
 		<item name="Yucca Chips Recipe">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="EconomicValue" value="200"/>
@@ -197,7 +196,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 			</effect_group>
 		</item>
-		
+
 		<item name="Hashbrown">
 			<property name="HoldType" value="31"/>
 			<property name="DescriptionKey" value="ATHashbrownDesc"/>
@@ -224,7 +223,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 			</effect_group>
 		</item>
-        <!--===Item Recipe==-->
+		<!--===Item Recipe==-->
 		<item name="Hashbrown Recipe">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="EconomicValue" value="200"/>
@@ -236,7 +235,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 			</effect_group>
 		</item>
-		
+
 		<item name="Mashed Potato">
 			<property name="HoldType" value="31"/>
 			<property name="DescriptionKey" value="ATMashPotatoDesc"/>
@@ -263,7 +262,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 			</effect_group>
 		</item>
-        <!--===Item Recipe==-->
+		<!--===Item Recipe==-->
 		<item name="Mashed Potato Recipe">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="EconomicValue" value="250"/>
@@ -275,7 +274,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="75"/>
 			</effect_group>
 		</item>
-		
+
 		<item name="Corn Grits">
 			<property name="HoldType" value="31"/>
 			<property name="DescriptionKey" value="ATCornGritsDesc"/>
@@ -302,7 +301,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 			</effect_group>
 		</item>
-        <!--===Item Recipe==-->
+		<!--===Item Recipe==-->
 		<item name="Corn Grits Recipe">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="EconomicValue" value="250"/>
@@ -314,7 +313,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="75"/>
 			</effect_group>
 		</item>
-		
+
 		<item name="Blueberry Jam">
 			<property name="HoldType" value="31"/>
 			<property name="DescriptionKey" value="ATBlueberryJamDesc"/>
@@ -340,9 +339,14 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="subtract" value="5"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$ATbuffSugarRushDuration" operation="add" value="15"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$ATbuffSugarRushDuration" operation="set" value="33">
+					<requirement name="CVarCompare" cvar="$ATbuffSugarRushDuration" operation="GT" value="33"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="ATbuffSugarRush"/>
 			</effect_group>
 		</item>
-        <!--===Item Recipe==-->
+		<!--===Item Recipe==-->
 		<item name="Blueberry Jam Recipe">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="EconomicValue" value="200"/>
@@ -354,7 +358,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="75"/>
 			</effect_group>
 		</item>
-		
+
 		<item name="Yucca Jam">
 			<property name="HoldType" value="31"/>
 			<property name="DescriptionKey" value="ATYuccaJamDesc"/>
@@ -380,9 +384,14 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="subtract" value="5"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$ATbuffSugarRushDuration" operation="add" value="15"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$ATbuffSugarRushDuration" operation="set" value="33">
+					<requirement name="CVarCompare" cvar="$ATbuffSugarRushDuration" operation="GT" value="33"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="ATbuffSugarRush"/>
 			</effect_group>
 		</item>
-        <!--===Item Recipe==-->
+		<!--===Item Recipe==-->
 		<item name="Yucca Jam Recipe">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="EconomicValue" value="200"/>
@@ -394,7 +403,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="75"/>
 			</effect_group>
 		</item>
-		
+
 		<item name="Egg Salad">
 			<property name="HoldType" value="31"/>
 			<property name="DescriptionKey" value="ATEggSaladDesc"/>
@@ -419,9 +428,15 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="35"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="10"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="4"/><display_value name="dFoodPoisoningRisk" value=".04"/> <!-- FP cooked -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffIllFoodPoisoning01">
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+				</triggered_effect>				
 			</effect_group>
 		</item>
-        <!--===Item Recipe==-->
+		<!--===Item Recipe==-->
 		<item name="Egg Salad Recipe">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="EconomicValue" value="250"/>
@@ -433,7 +448,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="75"/>
 			</effect_group>
 		</item>
-		
+
 		<item name="Fried Meat">
 			<property name="HoldType" value="31"/>
 			<property name="DescriptionKey" value="ATFriedMeatDesc"/>
@@ -458,9 +473,15 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="20"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="4"/><display_value name="dFoodPoisoningRisk" value=".04"/> <!-- FP cooked -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffIllFoodPoisoning01">
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+				</triggered_effect>
 			</effect_group>
 		</item>
-        <!--===Item Recipe==-->
+		<!--===Item Recipe==-->
 		<item name="Fried Meat Recipe">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="EconomicValue" value="250"/>
@@ -472,7 +493,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 			</effect_group>
 		</item>
-		
+
 		<item name="Corn Chips">
 			<property name="HoldType" value="31"/>
 			<property name="DescriptionKey" value="ATCornChipsDesc"/>
@@ -499,7 +520,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 			</effect_group>
 		</item>
-        <!--===Item Recipe==-->
+		<!--===Item Recipe==-->
 		<item name="Corn Chips Recipe">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="EconomicValue" value="150"/>
@@ -511,7 +532,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 			</effect_group>
 		</item>
-		
+
 		<item name="Blueberry Jam Sandwich">
 			<property name="HoldType" value="31"/>
 			<property name="DescriptionKey" value="ATBBJamSandwichDesc"/>
@@ -612,10 +633,16 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="60"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="28"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables,buffCoffee"/>
-				<display_value name="staminaAmount" value=".25" />
+				<display_value name="dStaminaRegen" value=".25" />
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="4"/><display_value name="dFoodPoisoningRisk" value=".04"/> <!-- FP cooked -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffIllFoodPoisoning01">
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+				</triggered_effect>
 			</effect_group>
 		</item>
-        <!--===Item Recipe==-->
+		<!--===Item Recipe==-->
 		<item name="Coffee Cake Recipe">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="EconomicValue" value="300"/>
@@ -627,7 +654,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="300"/>
 			</effect_group>
 		</item>
-		
+
 		<item name="Mushroom Pie">
 			<property name="HoldType" value="31"/>
 			<property name="DescriptionKey" value="ATMushroomPieDesc"/>
@@ -652,9 +679,15 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="45"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="22"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="4"/><display_value name="dFoodPoisoningRisk" value=".04"/> <!-- FP cooked -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffIllFoodPoisoning01">
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+				</triggered_effect>
 			</effect_group>
 		</item>
-        <!--===Item Recipe==-->
+		<!--===Item Recipe==-->
 		<item name="Mushroom Pie Recipe">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="EconomicValue" value="300"/>
@@ -666,7 +699,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="300"/>
 			</effect_group>
 		</item>
-		
+
 		<item name="Meat and Beer Pie">
 			<property name="HoldType" value="31"/>
 			<property name="DescriptionKey" value="ATMeatAndBeerPieDesc"/>
@@ -691,9 +724,15 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="65"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="35"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="4"/><display_value name="dFoodPoisoningRisk" value=".04"/> <!-- FP cooked -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffIllFoodPoisoning01">
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+				</triggered_effect>
 			</effect_group>
 		</item>
-        <!--===Item Recipe==-->
+		<!--===Item Recipe==-->
 		<item name="Meat and Beer Pie Recipe">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="EconomicValue" value="400"/>
@@ -702,10 +741,10 @@
 			<property name="Unlocks" value="Meat and Beer Pie"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Meat and Beer Pie" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 			</effect_group>
 		</item>
-		
+
 		<item name="Fried Mushrooms">
 			<property name="HoldType" value="31"/>
 			<property name="DescriptionKey" value="ATFriedMushroomsDesc"/>
@@ -732,7 +771,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 			</effect_group>
 		</item>
-        <!--===Item Recipe==-->
+		<!--===Item Recipe==-->
 		<item name="Fried Mushrooms Recipe">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="EconomicValue" value="200"/>
@@ -744,7 +783,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 			</effect_group>
 		</item>
-		
+
 		<item name="Fried Egg">
 			<property name="HoldType" value="31"/>
 			<property name="DescriptionKey" value="ATFriedEggDesc"/>
@@ -753,7 +792,7 @@
 			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Morganic"/>
-			<property name="Stacknumber" value="50"/> <!-- STK food -->
+			<property name="Stacknumber" value="50"/> <!-- ATL food -->
 			<property name="EconomicValue" value="10"/>
 			<property name="UnlockedBy" value="perkMasterChef,Fried Egg Recipe"/>
 			<property name="EconomicBundleSize" value="1"/>
@@ -769,9 +808,15 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="4"/><display_value name="dFoodPoisoningRisk" value=".04"/> <!-- FP cooked -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffIllFoodPoisoning01">
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+				</triggered_effect>
 			</effect_group>
 		</item>
-        <!--===Item Recipe==-->
+		<!--===Item Recipe==-->
 		<item name="Fried Egg Recipe">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="EconomicValue" value="80"/>
@@ -783,7 +828,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="30"/>
 			</effect_group>
 		</item>
-		
+
 		<item name="French Toast">
 			<property name="HoldType" value="31"/>
 			<property name="DescriptionKey" value="ATFrenchToastDesc"/>
@@ -792,7 +837,7 @@
 			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Morganic"/>
-			<property name="Stacknumber" value="50"/> <!-- STK food -->
+			<property name="Stacknumber" value="50"/> <!-- ATL food -->
 			<property name="EconomicValue" value="10"/>
 			<property name="UnlockedBy" value="perkMasterChef,French Toast Recipe"/>
 			<property name="EconomicBundleSize" value="1"/>
@@ -808,9 +853,15 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="25"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="10"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="4"/><display_value name="dFoodPoisoningRisk" value=".04"/> <!-- FP cooked -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffIllFoodPoisoning01">
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+				</triggered_effect>
 			</effect_group>
 		</item>
-        <!--===Item Recipe==-->
+		<!--===Item Recipe==-->
 		<item name="French Toast Recipe">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="EconomicValue" value="200"/>
@@ -822,7 +873,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="60"/>
 			</effect_group>
 		</item>
-		
+
 		<item name="Honey Glazed Meat">
 			<property name="HoldType" value="31"/>
 			<property name="DescriptionKey" value="ATHoneyGlazedMeatDesc"/>
@@ -847,9 +898,15 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="30"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="15"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="4"/><display_value name="dFoodPoisoningRisk" value=".04"/> <!-- FP cooked -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffIllFoodPoisoning01">
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+				</triggered_effect>
 			</effect_group>
 		</item>
-        <!--===Item Recipe==-->
+		<!--===Item Recipe==-->
 		<item name="Honey Glazed Meat Recipe">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="EconomicValue" value="250"/>
@@ -859,6 +916,709 @@
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Honey Glazed Meat" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="60"/>
+			</effect_group>
+		</item>
+
+
+
+		<!--====== Version 2 ======-->
+
+		<item name="Blueberry Soda">
+			<property name="HoldType" value="3"/>
+			<property name="DescriptionKey" value="ATBlueberrySodaDesc"/>
+			<property name="CustomIcon" value="ATBlueberrySoda"/>
+			<property name="DisplayType" value="ATHungerDrinkDisplay"/>
+			<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Weight" value="10"/>
+			<property name="Stacknumber" value="15"/> <!-- STK drink -->
+			<property name="EconomicValue" value="55"/>
+			<property name="UnlockedBy" value="perkMasterChef,Blueberry Soda Recipe"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_drinking"/>
+				<property name="Create_item" value="drinkJarEmpty"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
+
+			<effect_group tiered="false">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="28"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
+				<display_value name="foodHealthAmount" value="5" />
+				<display_value name="dStaminaRegen" value=".15" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+
+			<effect_group tiered="false">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffExtinguishFire"/>
+			</effect_group>
+		</item>		
+		<!--===Item Recipe==-->	
+		<item name="Blueberry Soda Recipe">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="EconomicValue" value="200"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="ATBlueberrySoda"/>
+			<property name="Unlocks" value="Blueberry Soda"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Blueberry Soda" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+
+		<item name="Kvass Soda">
+			<property name="HoldType" value="3"/>
+			<property name="DescriptionKey" value="ATKvassSodaDesc"/>
+			<property name="CustomIcon" value="ATKvassSoda"/>
+			<property name="DisplayType" value="ATHungerDrinkDisplay"/>
+			<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Weight" value="10"/>
+			<property name="Stacknumber" value="15"/> <!-- STK drink -->
+			<property name="EconomicValue" value="55"/>
+			<property name="UnlockedBy" value="perkMasterChef,Kvass Soda Recipe"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_drinking"/>
+				<property name="Create_item" value="drinkJarEmpty"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
+
+			<effect_group tiered="false">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="24"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
+				<display_value name="foodHealthAmount" value="5" />
+				<display_value name="dStaminaRegen" value=".15" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+
+			<effect_group tiered="false">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffExtinguishFire"/>
+			</effect_group>
+		</item>		
+		<!--===Item Recipe==-->	
+		<item name="Kvass Soda Recipe">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="EconomicValue" value="200"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="ATKvassSoda"/>
+			<property name="Unlocks" value="Kvass Soda"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Kvass Soda" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+
+		<item name="Carbonated Water">
+			<property name="HoldType" value="3"/>
+			<property name="DescriptionKey" value="ATCarbonatedWaterDesc"/>
+			<property name="CustomIcon" value="ATCarbonatedWater"/>
+			<property name="DisplayType" value="waterRedTea"/>
+			<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Weight" value="10"/>
+			<property name="Stacknumber" value="15"/> <!-- STK drink -->
+			<property name="EconomicValue" value="45"/>
+			<property name="UnlockedBy" value="perkMasterChef,Carbonated Water Recipe"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_drinking"/>
+				<property name="Create_item" value="drinkJarEmpty"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
+
+			<effect_group tiered="false">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="24"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
+				<display_value name="foodHealthAmount" value="5" />
+				<display_value name="dStaminaRegen" value=".15" />
+				<display_value name="dEfficientDigestion" value=".10"/>
+				<display_value name="dDuration" value="303"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffRedTeaDuration" operation="add" value="303"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffRedTeaDuration" operation="set" value="903">
+					<requirement name="CVarCompare" cvar="$buffRedTeaDuration" operation="GT" value="903"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables,buffRedTea"/>
+			</effect_group>
+
+			<effect_group tiered="false">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffExtinguishFire"/>
+			</effect_group>
+		</item>		
+		<!--===Item Recipe==-->	
+		<item name="Carbonated Water Recipe">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="EconomicValue" value="200"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="ATCarbonatedWater"/>
+			<property name="Unlocks" value="Carbonated Water"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Carbonated Water" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<!--========Alcohol========-->
+
+		<item name="Distilled Vodka">
+			<property name="HoldType" value="3"/>
+			<property name="DescriptionKey" value="ATVodkaDesc"/>
+			<property name="CustomIcon" value="ATVodka"/>
+			<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Weight" value="10"/>
+			<property name="Stacknumber" value="10"/> <!-- STK drink -->
+			<property name="EconomicValue" value="100"/>
+			<property name="UnlockedBy" value="perkMasterChef,Distilled Vodka Recipe"/>
+			<property name="DisplayType" value="ATVodkaDisplay"/>
+			<property name="Group" value="Food/Cooking,CFDrink/Cooking,Medical"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="2"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_drinking"/>
+				<property name="Create_item" value="drinkJarEmpty"/>
+			</property>
+			<effect_group tiered="false">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+				<display_value name="dStaminaRegen" value=".5"/>
+				<display_value name="dBartering" value="0.15"/>
+				<display_value name="dStunResist" value="1"/>
+				<display_value name="dDuration" value="15"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$ATbuffVodkaDuration" operation="add" value="15"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$ATbuffVodkaDuration" operation="set" value="53">
+					<requirement name="CVarCompare" cvar="$ATbuffVodkaDuration" operation="GT" value="53"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="ATbuffVodka"/>
+			</effect_group>
+		</item>
+		<!--===Item Recipe==-->	
+		<item name="Distilled Vodka Recipe">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="EconomicValue" value="200"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="ATVodka"/>
+			<property name="Unlocks" value="Distilled Vodka"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Distilled Vodka" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="Snowberry Gin">
+			<property name="HoldType" value="3"/>
+			<property name="DescriptionKey" value="ATSnowberryGinDesc"/>
+			<property name="CustomIcon" value="ATSnowberryGin"/>
+			<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Weight" value="10"/>
+			<property name="Stacknumber" value="10"/> <!-- STK drink -->
+			<property name="EconomicValue" value="100"/>
+			<property name="UnlockedBy" value="perkMasterChef,Snowberry Gin Recipe"/>
+			<property name="DisplayType" value="ATSnowberryGinDisplay"/>
+			<property name="Group" value="Food/Cooking,CFDrink/Cooking,Medical"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="2"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_drinking"/>
+				<property name="Create_item" value="drinkJarEmpty"/>
+			</property>
+			<effect_group tiered="false">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+				<display_value name="dStaminaRegen" value=".6"/>
+				<display_value name="dBlockDamage" value="1.5"/>
+				<display_value name="dDuration" value="30"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$ATbuffSnowberryGinDuration" operation="add" value="33"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$ATbuffSnowberryGinDuration" operation="set" value="93">
+					<requirement name="CVarCompare" cvar="$ATbuffSnowberryGinDuration" operation="GT" value="93"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="ATbuffSnowberryGin"/>
+			</effect_group>
+		</item>
+		<!--===Item Recipe==-->	
+		<item name="Snowberry Gin Recipe">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="EconomicValue" value="200"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="ATSnowberryGin"/>
+			<property name="Unlocks" value="Snowberry Gin"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Snowberry Gin" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<!--========Alcohol End========-->
+
+		<item name="Sugar Extract">
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="31"/>
+			<property name="DescriptionKey" value="ATSugarExtractDesc"/>
+			<property name="CustomIcon" value="ATSugarExtract"/>
+			<property name="DisplayType" value="foodWater"/>
+			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Stacknumber" value="125"/> <!-- STK resource -->
+			<property name="EconomicValue" value="8"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="CraftingIngredientTime" value="10"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Resources,Food/Cooking,CFFood/Cooking"/>
+
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="3"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="-10"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$ATbuffSugarRushDuration" operation="add" value="10"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$ATbuffSugarRushDuration" operation="set" value="23">
+					<requirement name="CVarCompare" cvar="$ATbuffSugarRushDuration" operation="GT" value="23"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="ATbuffSugarRush,buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		<!--===Item Recipe==-->
+		<item name="Sugar Extract Recipe">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="EconomicValue" value="200"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="ATSugarExtract"/>
+			<property name="Unlocks" value="Sugar Extract"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Sugar Extract" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+
+		<item name="Rock Candy">
+			<property name="HoldType" value="31"/>
+			<property name="DescriptionKey" value="ATRockCandyDesc"/>
+			<property name="CustomIcon" value="ATRockCandy"/>
+			<property name="DisplayType" value="food"/>
+			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Stacknumber" value="50"/> <!-- ATL food -->
+			<property name="EconomicValue" value="10"/>
+			<property name="UnlockedBy" value="perkMasterChef,Rock Candy Recipe"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$ATbuffSugarRushDuration" operation="add" value="30"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$ATbuffSugarRushDuration" operation="set" value="63">
+					<requirement name="CVarCompare" cvar="$ATbuffSugarRushDuration" operation="GT" value="63"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="ATbuffSugarRush,buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		<!--===Item Recipe==-->
+		<item name="Rock Candy Recipe">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="EconomicValue" value="200"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="ATRockCandy"/>
+			<property name="Unlocks" value="Rock Candy"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Rock Candy" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="Blueberry Candy">
+			<property name="HoldType" value="31"/>
+			<property name="DescriptionKey" value="ATRockCandyBlueberryDesc"/>
+			<property name="CustomIcon" value="ATRockCandyBlueberry"/>
+			<property name="DisplayType" value="food"/>
+			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Stacknumber" value="50"/> <!-- ATL food -->
+			<property name="EconomicValue" value="10"/>
+			<property name="UnlockedBy" value="perkMasterChef,Blueberry Candy Recipe"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="7"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$ATbuffSugarRushDuration" operation="add" value="40"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$ATbuffSugarRushDuration" operation="set" value="73">
+					<requirement name="CVarCompare" cvar="$ATbuffSugarRushDuration" operation="GT" value="73"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="ATbuffSugarRush,buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		<!--===Item Recipe==-->
+		<item name="Blueberry Candy Recipe">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="EconomicValue" value="200"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="ATRockCandyBlueberry"/>
+			<property name="Unlocks" value="Blueberry Candy"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Blueberry Candy" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="Snowberry Candy">
+			<property name="HoldType" value="31"/>
+			<property name="DescriptionKey" value="ATRockCandySnowberryDesc"/>
+			<property name="CustomIcon" value="ATRockCandySnowberry"/>
+			<property name="DisplayType" value="ATSnowberryCandyDisplay"/>
+			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Stacknumber" value="50"/> <!-- ATL food -->
+			<property name="EconomicValue" value="10"/>
+			<property name="UnlockedBy" value="perkMasterChef,Snowberry Candy Recipe"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
+
+				<display_value name="dEfficientDigestion" value=".10"/>
+				<display_value name="dDuration" value="303"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffRedTeaDuration" operation="add" value="303"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffRedTeaDuration" operation="set" value="653">
+					<requirement name="CVarCompare" cvar="$buffRedTeaDuration" operation="GT" value="653"/></triggered_effect>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$ATbuffSugarRushDuration" operation="add" value="30"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$ATbuffSugarRushDuration" operation="set" value="63">
+					<requirement name="CVarCompare" cvar="$ATbuffSugarRushDuration" operation="GT" value="63"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="ATbuffSugarRush,buffRedTea,buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		<!--===Item Recipe==-->
+		<item name="Snowberry Candy Recipe">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="EconomicValue" value="200"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="ATRockCandySnowberry"/>
+			<property name="Unlocks" value="Snowberry Candy"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Snowberry Candy" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="Plain Fudge">
+			<property name="HoldType" value="31"/>
+			<property name="DescriptionKey" value="ATFudgeDesc"/>
+			<property name="CustomIcon" value="ATFudge"/>
+			<property name="DisplayType" value="food"/>
+			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Stacknumber" value="50"/> <!-- ATL food -->
+			<property name="EconomicValue" value="10"/>
+			<property name="UnlockedBy" value="perkMasterChef,Plain Fudge Recipe"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$ATbuffSugarRushDuration" operation="add" value="40"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$ATbuffSugarRushDuration" operation="set" value="73">
+					<requirement name="CVarCompare" cvar="$ATbuffSugarRushDuration" operation="GT" value="73"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="ATbuffSugarRush,buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		<!--===Item Recipe==-->
+		<item name="Plain Fudge Recipe">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="EconomicValue" value="200"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="ATFudge"/>
+			<property name="Unlocks" value="Plain Fudge"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Plain Fudge" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+
+		<item name="Energy Tablet">
+			<property name="HoldType" value="16"/>
+			<property name="DescriptionKey" value="ATEnergyTabletDesc"/>
+			<property name="CustomIcon" value="ATEnergyTablet"/>
+			<property name="DisplayType" value="ATEnergyTabletDisplay"/>
+			<property name="Meshfile" value="#Other/Items?Health/painkillersPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Stacknumber" value="10"/> <!-- ATL food -->
+			<property name="EconomicValue" value="300"/>
+			<property name="UnlockedBy" value="perkMasterChef,Energy Tablet Recipe"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_painkillers"/>
+				<requirement name="NotHasBuff" buff="ATbuffEnergyTablet"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFDrink/Cooking,Medical"/>
+
+			<effect_group tiered="false">
+				<display_value name="dStaminaRegen" value=".35"/>
+				<display_value name="$waterAmountAdd" value="-30"/>
+				<display_value name="dRunSpeed" value="0.5"/>
+				<display_value name="dReloadSpeedMultiplier" value="0.15"/>
+				<display_value name="dDuration" value="160"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$ATbuffEnergyTabletDuration" operation="add" value="50"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$ATbuffEnergyTabletDuration" operation="set" value="180">
+					<requirement name="CVarCompare" cvar="$ATbuffEnergyTabletDuration" operation="GT" value="180"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="ATbuffEnergyTablet"/>
+			</effect_group>
+		</item>
+		<!--===Item Recipe==-->
+		<item name="Energy Tablet Recipe">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="EconomicValue" value="300"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="ATFudge"/>
+			<property name="Unlocks" value="Energy Tablet"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Energy Tablet" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="Sponge Cake">
+			<property name="HoldType" value="31"/>
+			<property name="DescriptionKey" value="ATSpongeCakeDesc"/>
+			<property name="CustomIcon" value="ATSpongeCake"/>
+			<property name="DisplayType" value="food"/>
+			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Stacknumber" value="25"/> <!-- STK food -->
+			<property name="EconomicValue" value="70"/>
+			<property name="UnlockedBy" value="perkMasterChef,Sponge Cake Recipe"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="2.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="50"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="25"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="4"/><display_value name="dFoodPoisoningRisk" value=".04"/> <!-- FP cooked -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffIllFoodPoisoning01">
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+				</triggered_effect>
+			</effect_group>
+		</item>
+		<!--===Item Recipe==-->
+		<item name="Sponge Cake Recipe">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="EconomicValue" value="400"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="ATSpongeCake"/>
+			<property name="Unlocks" value="Sponge Cake"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Sponge Cake" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="Blueberry Sponge Cake">
+			<property name="HoldType" value="31"/>
+			<property name="DescriptionKey" value="ATBlueberrySpongeDesc"/>
+			<property name="CustomIcon" value="ATBlueberrySponge"/>
+			<property name="DisplayType" value="food"/>
+			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Stacknumber" value="25"/> <!-- STK food -->
+			<property name="EconomicValue" value="80"/>
+			<property name="UnlockedBy" value="perkMasterChef,Blueberry Sponge Cake Recipe"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="2.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="60"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="40"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="4"/><display_value name="dFoodPoisoningRisk" value=".04"/> <!-- FP cooked -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffIllFoodPoisoning01">
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+				</triggered_effect>
+			</effect_group>
+		</item>
+		<!--===Item Recipe==-->
+		<item name="Blueberry Sponge Cake Recipe">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="EconomicValue" value="400"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="ATBlueberrySponge"/>
+			<property name="Unlocks" value="Sponge Cake"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Blueberry Sponge Cake" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="Yucca Sponge Cake">
+			<property name="HoldType" value="31"/>
+			<property name="DescriptionKey" value="ATYuccaSpongeDesc"/>
+			<property name="CustomIcon" value="ATYuccaSponge"/>
+			<property name="DisplayType" value="food"/>
+			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Stacknumber" value="25"/> <!-- STK food -->
+			<property name="EconomicValue" value="80"/>
+			<property name="UnlockedBy" value="perkMasterChef,Yucca Sponge Cake Recipe"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="2.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="80"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="25"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="4"/><display_value name="dFoodPoisoningRisk" value=".04"/> <!-- FP cooked -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffIllFoodPoisoning01">
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+				</triggered_effect>
+			</effect_group>
+		</item>
+		<!--===Item Recipe==-->
+		<item name="Yucca Sponge Cake Recipe">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="EconomicValue" value="400"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="ATYuccaSponge"/>
+			<property name="Unlocks" value="Sponge Cake"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Yucca Sponge Cake" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+
+		<item name="Custard Pie">
+			<property name="HoldType" value="31"/>
+			<property name="DescriptionKey" value="ATCustardPieDesc"/>
+			<property name="CustomIcon" value="ATCustardPie"/>
+			<property name="DisplayType" value="food"/>
+			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Stacknumber" value="25"/> <!-- STK food -->
+			<property name="EconomicValue" value="80"/>
+			<property name="UnlockedBy" value="perkMasterChef,Custard Pie Recipe"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="2.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="35"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="15"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="4"/><display_value name="dFoodPoisoningRisk" value=".04"/> <!-- FP cooked -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffIllFoodPoisoning01">
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+				</triggered_effect>
+			</effect_group>
+		</item>
+		<!--===Item Recipe==-->
+		<item name="Custard Pie Recipe">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="EconomicValue" value="400"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="ATCustardPie"/>
+			<property name="Unlocks" value="Custard Pie"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Custard Pie" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 			</effect_group>
 		</item>
 	</append>

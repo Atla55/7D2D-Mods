@@ -33,7 +33,6 @@
 		<recipe name="Mashed Potato" count="1" craft_time="30" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot" >
 			<ingredient name="foodCropPotato" count="5"/>
 			<ingredient name="resourceAnimalFat" count="1"/>
-			<ingredient name="foodEgg" count="1"/>
 		</recipe>
 
 		<recipe name="Corn Grits" count="1" craft_time="25" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot" >
@@ -44,12 +43,12 @@
 
 		<recipe name="Blueberry Jam" count="1" craft_time="22" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot" >
 			<ingredient name="drinkJarBoiledWater" count="1"/>
-			<ingredient name="foodCropBlueberries" count="10"/>
+			<ingredient name="foodCropBlueberries" count="5"/>
 		</recipe>		
 
 		<recipe name="Yucca Jam" count="1" craft_time="22" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot" >
 			<ingredient name="drinkJarBoiledWater" count="1"/>
-			<ingredient name="foodCropYuccaFruit" count="10"/>
+			<ingredient name="foodCropYuccaFruit" count="5"/>
 		</recipe>	
 
 		<recipe name="Egg Salad" count="1" craft_time="35" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot" >
@@ -85,7 +84,7 @@
 			<ingredient name="foodRawMeat" count="5"/>
 		</recipe>-->
 
-		<recipe name="Coffee Cake" count="1" craft_time="50" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot" >
+		<recipe name="Coffee Cake" count="1" craft_time="50" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot">
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<ingredient name="foodCornMeal" count="2"/>
 			<ingredient name="foodEgg" count="2"/>
@@ -93,7 +92,7 @@
 			<ingredient name="resourceAnimalFat" count="2"/>
 		</recipe>
 
-		<recipe name="Mushroom Pie" count="1" craft_time="50" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot" >
+		<recipe name="Mushroom Pie" count="1" craft_time="50" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot">
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<ingredient name="foodCornMeal" count="1"/>
 			<ingredient name="foodEgg" count="1"/>
@@ -101,7 +100,7 @@
 			<ingredient name="resourceAnimalFat" count="1"/>
 		</recipe>
 
-		<recipe name="Meat and Beer Pie" count="1" craft_time="60" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot" >
+		<recipe name="Meat and Beer Pie" count="1" craft_time="60" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot">
 			<ingredient name="drinkJarBeer" count="1"/>
 			<ingredient name="foodCornMeal" count="1"/>
 			<ingredient name="foodEgg" count="1"/>
@@ -109,27 +108,116 @@
 			<ingredient name="resourceAnimalFat" count="2"/>
 		</recipe>
 
-		<recipe name="Fried Mushrooms" count="1" craft_time="30" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot" >
+		<recipe name="Fried Mushrooms" count="1" craft_time="30" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot">
 			<ingredient name="foodCropMushrooms" count="5"/>
 			<ingredient name="foodCornMeal" count="1"/>
 			<ingredient name="resourceAnimalFat" count="1"/>
 		</recipe>
 
-		<recipe name="French Toast" count="1" craft_time="30" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingGrill" >
+		<recipe name="French Toast" count="1" craft_time="30" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingGrill">
 			<ingredient name="foodCornBread" count="1"/>
 			<ingredient name="foodEgg" count="1"/>
 		</recipe>
 
-		<recipe name="Fried Egg" count="1" craft_time="20" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot" >
+		<recipe name="Fried Egg" count="1" craft_time="20" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot">
 			<ingredient name="resourceAnimalFat" count="1"/>
 			<ingredient name="foodEgg" count="1"/>
 		</recipe>
 
-		<recipe name="Honey Glazed Meat" count="1" craft_time="20" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot" >
+		<recipe name="Honey Glazed Meat" count="1" craft_time="20" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot">
 			<ingredient name="resourceAnimalFat" count="1"/>
 			<ingredient name="foodRawMeat" count="10"/>
 			<ingredient name="foodHoney" count="1"/>
 		</recipe>
 
+		<!--====Version 2====-->
+		<recipe name="Sugar Extract" count="1" craft_time="15" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot" >
+			<ingredient name="foodHoney" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		
+		<recipe name="Blueberry Soda" count="1" craft_time="25" craft_area="chemistryStation" tags="learnable,perkMasterChef,chemStationCrafting">
+			<ingredient name="Sugar Extract" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<ingredient name="foodCropBlueberries" count="2"/>
+		</recipe>
+		
+		<recipe name="Kvass Soda" count="1" craft_time="25" craft_area="chemistryStation" tags="learnable,perkMasterChef,chemStationCrafting">
+			<ingredient name="foodCornBread" count="1"/>
+			<ingredient name="drinkJarRiverWater" count="1"/>
+		</recipe>
+		
+		<recipe name="Carbonated Water" count="1" craft_time="25" craft_area="chemistryStation" tags="learnable,perkMasterChef,chemStationCrafting">
+			<ingredient name="Sugar Extract" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		
+		<recipe name="Distilled Vodka" count="1" craft_time="90" craft_area="chemistryStation" tags="learnable,perkMasterChef,chemStationCrafting">
+			<ingredient name="foodCropPotato" count="4"/>
+			<ingredient name="drinkJarRiverWater" count="1"/>
+		</recipe>
+		
+		<recipe name="Snowberry Gin" count="1" craft_time="90" craft_area="chemistryStation" tags="learnable,perkMasterChef,chemStationCrafting">
+			<ingredient name="resourceCropSnowberryPlant" count="4"/>
+			<ingredient name="drinkJarRiverWater" count="1"/>
+		</recipe>
+		
+		<recipe name="Rock Candy" count="2" craft_time="25" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot">
+			<ingredient name="Sugar Extract" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		
+		<recipe name="Blueberry Candy" count="2" craft_time="25" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot">
+			<ingredient name="Sugar Extract" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<ingredient name="foodCropBlueberries" count="2"/>
+		</recipe>
+		
+		<recipe name="Snowberry Candy" count="2" craft_time="25" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot">
+			<ingredient name="Sugar Extract" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<ingredient name="resourceCropSnowberryPlant" count="2"/>
+		</recipe>
+		
+		<recipe name="Plain Fudge" count="1" craft_time="25" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot">
+			<ingredient name="Sugar Extract" count="1"/>
+			<ingredient name="resourceAnimalFat" count="1"/>
+		</recipe>
+
+		<recipe name="Energy Tablet" count="1" craft_time="25" craft_area="chemistryStation" tags="learnable,perkMasterChef,chemStationCrafting">
+			<ingredient name="Sugar Extract" count="1"/>
+			<ingredient name="resourceCropCoffeeBeans" count="1"/>
+			<ingredient name="drinkCanMegaCrush" count="1"/>
+		</recipe>
+		
+		<recipe name="Sponge Cake" count="1" craft_time="50" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot">
+			<ingredient name="foodCornMeal" count="2"/>
+			<ingredient name="resourceAnimalFat" count="2"/>
+			<ingredient name="foodEgg" count="1"/>
+			<ingredient name="Sugar Extract" count="1"/>
+		</recipe>
+		
+		<recipe name="Blueberry Sponge Cake" count="1" craft_time="80" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot">
+			<ingredient name="Blueberry Jam" count="1"/>
+			<ingredient name="foodCornMeal" count="2"/>
+			<ingredient name="resourceAnimalFat" count="2"/>
+			<ingredient name="foodEgg" count="1"/>
+			<ingredient name="Sugar Extract" count="1"/>
+		</recipe>
+
+		<recipe name="Yucca Sponge Cake" count="1" craft_time="80" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot">
+			<ingredient name="Yucca Jam" count="1"/>
+			<ingredient name="foodCornMeal" count="2"/>
+			<ingredient name="resourceAnimalFat" count="2"/>
+			<ingredient name="foodEgg" count="1"/>
+			<ingredient name="Sugar Extract" count="1"/>
+		</recipe>
+		
+		<recipe name="Custard Pie" count="1" craft_time="35" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot">
+			<ingredient name="foodEgg" count="1"/>
+			<ingredient name="foodCornMeal" count="2"/>
+			<ingredient name="resourceAnimalFat" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
 	</append>
 </configs>
