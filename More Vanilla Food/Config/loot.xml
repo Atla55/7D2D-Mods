@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<append xpath="/lootgroup[@name='farmingCookingRecipes']">
+	<item name="Berry Tea Recipe"/>
+	<item name="Iced Mixed Tea Recipe"/>
+	<item name="Iced Coffee Recipe"/>
+	<item name="Yucca Chips Recipe"/>
+	<item name="Hashbrown Recipe"/>
+	<item name="Mashed Potato Recipe"/>
+	<item name="Corn Grits Recipe"/>
+	<item name="Blueberry Jam Recipe"/>
+	<item name="Yucca Jam Recipe"/>
+	<item name="Egg Salad Recipe"/>
+	<item name="Fried Meat Recipe"/>
+	<item name="Corn Chips Recipe"/>
+	<item name="Coffee Cake Recipe"/>
+	<item name="Mushroom Pie Recipe"/>
+	<item name="Meat and Beer Pie Recipe"/>
+	<item name="Fried Mushrooms Recipe"/>
+	<item name="Fried Egg Recipe"/>
+	<item name="French Toast Recipe"/>
+	<item name="Honey Glazed Meat Recipe"/>
+	<item name="Blueberry Soda Recipe"/>
+	<item name="Kvass Soda Recipe"/>
+	<item name="Carbonated Water Recipe"/>
+	<item name="Distilled Vodka Recipe"/>
+	<item name="Snowberry Gin Recipe"/>
+	<item name="Sugar Extract Recipe"/>
+	<item name="Rock Candy Recipe"/>
+	<item name="Blueberry Candy Recipe"/>
+	<item name="Snowberry Candy Recipe"/>
+	<item name="Plain Fudge Recipe"/>
+	<item name="Energy Tablet Recipe"/>
+	<item name="Sponge Cake Recipe"/>
+	<item name="Blueberry Sponge Cake Recipe"/>
+	<item name="Yucca Sponge Cake Recipe"/>
+	<item name="Custard Pie Recipe"/>
+	</append>
+</configs>
