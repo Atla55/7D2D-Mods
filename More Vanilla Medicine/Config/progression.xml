@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='1,5']/@tags">,Yucca Chips,Hashbrown,Corn Chips,Fried Egg</append>
+	
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='2,5']/@tags">,Berry Tea,Iced Mixed Tea,Iced Coffee,Fried Meat,Fried Mushrooms,French Toast,Kvass Soda,Carbonated Water,Sugar Extract,Rock Candy,Plain Fudge,Sponge Cake,Custard Pie </append>
+	
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='3,5']/@tags">,Corn Grits,Blueberry Jam,Yucca Jam,Egg Salad,Honey Glazed Meat,Blueberry Soda,Blueberry Candy,Blueberry Sponge Cake,Yucca Sponge Cake</append>
+	
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='4,5']/@tags">,Mashed Potato,Coffee Cake,Mushroom Pie,Meat and Beer Pie,Distilled Vodka,Snowberry Gin,Snowberry Candy,Energy Tablet</append>
+	
+</configs>

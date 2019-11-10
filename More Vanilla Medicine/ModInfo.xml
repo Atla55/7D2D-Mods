@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<xml>
+		<ModInfo>
+			<Name value="More Vanilla Medicine"/>
+			<Description value="Adds many more healing and medical items based off vanilla items."/>
+			<Author value="Atlas"/>
+			<Version value="A18" />
+
+			<Website value="https://discord.gg/CmNuckc"/>
+		</ModInfo>
+	</xml>

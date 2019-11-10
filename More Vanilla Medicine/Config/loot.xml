@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
-	<append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipes']">
+	<append xpath="/lootgroup[@name='farmingCookingRecipes']">
 	<item name="Berry Tea Recipe"/>
 	<item name="Iced Mixed Tea Recipe"/>
 	<item name="Iced Coffee Recipe"/>

@@ -83,6 +83,3 @@ ATSugarRushTooltip,buffs,Buff,New,That was a lot of sugar.
 ATEnergyTabletDesc,buffs,Buff,New,You can run faster. reload slightly quicker and become less exhausted. 
 ATEnergyTabletName,buffs,Buff,New,Energy Rush
 ATEnergyTabletTooltip,buffs,Buff,New,What a rush!
-
-ATColdDrinkName,buffs,Buff,New,Cold Drink
-ATColdDrinkDesc,buffs,Buff,New,Iced drinks help you survive better in hot environments.

@@ -8,7 +8,7 @@
 			<property name="HoldType" value="3"/>
 			<property name="DescriptionKey" value="ATBerryTeaDesc"/>
 			<property name="CustomIcon" value="ATBerryTea"/>
-			<property name="DisplayType" value="ATWaterHealthDisplay"/>
+			<property name="DisplayType" value="water"/>
 			<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Mglass"/>
@@ -29,9 +29,9 @@
 				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
 
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="20"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="6"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="10"/>
+				<display_value name="foodHealthAmount" value="10" />
 				<display_value name="dStaminaRegen" value=".15" />
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
 			</effect_group>
 
 			<effect_group tiered="false">
@@ -56,7 +56,7 @@
 			<property name="HoldType" value="3"/>
 			<property name="DescriptionKey" value="ATMixedTeaDesc"/>
 			<property name="CustomIcon" value="ATMixedTea"/>
-			<property name="DisplayType" value="ATIceDrinkDisplay"/>
+			<property name="DisplayType" value="water"/>
 			<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Mglass"/>
@@ -77,13 +77,13 @@
 				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
 
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="40"/>
-				<display_value name="dHyperthermalResist" value="30"/>
+				<display_value name="dHypothermalResist" value="30"/>
 				<display_value name="dDuration" value="903"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$ATbuffColdDrinkDuration" operation="add" value="203"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$ATbuffColdDrinkDuration" operation="set" value="903">
-					<requirement name="CVarCompare" cvar="$ATbuffColdDrinkDuration" operation="GT" value="903"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffYuccaJuiceSmoothieDuration" operation="add" value="903"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffYuccaJuiceSmoothieDuration" operation="set" value="2703">
+					<requirement name="CVarCompare" cvar="$buffYuccaJuiceSmoothieDuration" operation="GT" value="2703"/></triggered_effect>
 				<display_value name="dStaminaRegen" value=".15" />
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables,ATbuffColdDrink"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables,buffYuccaJuiceSmoothie"/>
 			</effect_group>
 
 			<effect_group tiered="false">
@@ -108,7 +108,7 @@
 			<property name="HoldType" value="3"/>
 			<property name="DescriptionKey" value="ATIcedCoffeeDesc"/>
 			<property name="CustomIcon" value="ATIcedCoffee"/>
-			<property name="DisplayType" value="ATIceDrinkDisplay"/>
+			<property name="DisplayType" value="water"/>
 			<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Mglass"/>
@@ -129,18 +129,13 @@
 				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
 
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="24"/>
-				<display_value name="dStaminaRegen" value=".25" />
-				<display_value name="dHyperthermalResist" value="30"/>
+				<display_value name="dStaminaRegen" value=".3" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables, buffCoffee, buffYuccaJuiceSmoothie"/>
+				<display_value name="dHypothermalResist" value="30"/>
 				<display_value name="dDuration" value="903"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$ATbuffColdDrinkDuration" operation="add" value="203"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$ATbuffColdDrinkDuration" operation="set" value="903">
-					<requirement name="CVarCompare" cvar="$ATbuffColdDrinkDuration" operation="GT" value="903"/></triggered_effect>
-
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeDuration" operation="add" value="103"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeDuration" operation="set" value="343">
-					<requirement name="CVarCompare" cvar="$buffCoffeeDuration" operation="GT" value="343"/></triggered_effect>
-
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables, buffCoffee, ATbuffColdDrink"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffYuccaJuiceSmoothieDuration" operation="add" value="903"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffYuccaJuiceSmoothieDuration" operation="set" value="2703">
+					<requirement name="CVarCompare" cvar="$buffYuccaJuiceSmoothieDuration" operation="GT" value="2703"/></triggered_effect>
 			</effect_group>
 
 			<effect_group tiered="false">
@@ -157,7 +152,7 @@
 			<property name="Unlocks" value="Iced Coffee"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Iced Coffee" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="55"/>
 			</effect_group>
 		</item>
 
@@ -276,7 +271,7 @@
 			<property name="Unlocks" value="Mashed Potato"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Mashed Potato" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="75"/>
 			</effect_group>
 		</item>
 
@@ -315,7 +310,7 @@
 			<property name="Unlocks" value="Corn Grits"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Corn Grits" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="75"/>
 			</effect_group>
 		</item>
 
@@ -360,7 +355,7 @@
 			<property name="Unlocks" value="Blueberry Jam"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Blueberry Jam" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="75"/>
 			</effect_group>
 		</item>
 
@@ -405,7 +400,7 @@
 			<property name="Unlocks" value="Yucca Jam"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Yucca Jam" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="75"/>
 			</effect_group>
 		</item>
 
@@ -450,7 +445,7 @@
 			<property name="Unlocks" value="Egg Salad"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Egg Salad" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="75"/>
 			</effect_group>
 		</item>
 
@@ -656,7 +651,7 @@
 			<property name="Unlocks" value="Coffee Cake"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Coffee Cake" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="300"/>
 			</effect_group>
 		</item>
 
@@ -701,7 +696,7 @@
 			<property name="Unlocks" value="Mushroom Pie"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Mushroom Pie" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="300"/>
 			</effect_group>
 		</item>
 

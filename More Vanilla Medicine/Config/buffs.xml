@@ -120,24 +120,5 @@
 			<passive_effect name="StaminaLossMaxMult" operation="perc_add" value="0.1"/> <!-- regening stamina costs food, blacks out the stamina bar -->
 		</effect_group>
 	</buff>
-	
-	<buff name="ATbuffColdDrink" name_key="ATColdDrinkName" description_key="ATColdDrinkDesc" icon="ATIceDrink">
-		<stack_type value="replace"/><duration value="0"/>
-		<display_value value=".ATbuffColdDrinkDisplay"/><display_value_format value="time"/>
-		<effect_group>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$ATbuffColdDrinkDuration" operation="subtract" value="@$MetabolismDuration"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ATbuffColdDrinkDisplay" operation="set" value="@$ATbuffColdDrinkDuration"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ATbuffColdDrinkDisplay" operation="divide" value="@$MetabolismDuration"/>
-		</effect_group>
-		<effect_group>
-			<requirement name="CVarCompare" cvar="$ATbuffColdDrinkDuration" operation="LTE" value="0"/>
-				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".ATbuffColdDrinkDisplay" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$ATbuffColdDrinkDuration" operation="set" value="0"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="ATbuffColdDrink"/>
-		</effect_group>
-		<effect_group>
-			<passive_effect name="HyperthermalResist" operation="base_add" value="30"/>
-		</effect_group>
-	</buff>
 </append>	
 </configs>
