@@ -272,7 +272,7 @@
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="EconomicValue" value="250"/>
 			<property name="CreativeMode" value="Player"/>
-			<property name="CustomIcon" value="ATMashedPotato"/>
+			<property name="CustomIcon" value="ATMashPotato"/>
 			<property name="Unlocks" value="Mashed Potato"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Mashed Potato" operation="set" value="1"/>
