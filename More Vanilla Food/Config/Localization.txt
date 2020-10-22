@@ -31,7 +31,7 @@ ATCoffeeCakeDesc,items,Food,New,This cake offers the energising properties of co
 
 ATMushroomPieDesc,items,Food,New,Savory and buttery pie crust filled to the brim with mushrooms
 
-ATMeatAndBeerPieDesc,items,Food,New,Rich and savory pie crust with a meat and beer filling. Truly a feast fit for the best of the best 
+ATMeatAndBeerPieDesc,items,Food,New,Rich and savory pie crust with a meat and beer filling. Truly a feast fit for the best of the best
 
 ATFriedMushroomsDesc,items,Food,New,Whole mushrooms coated in cornmeal and fried. A very filling snack
 
@@ -71,7 +71,7 @@ ATRockCandySnowberryDesc,items,Food,New,Snowberry infused rock candy that will h
 
 ATSpongeCakeDesc,items,Food,New,Dense sponge cake with sugar icing atop it.
 
-ATSugarExtractDesc,items,Food,New,You'd have to be pretty deperate to eat raw sugar. Used in soda, candies and cakes
+ATSugarExtractDesc,items,Food,New,You'd have to be pretty desperate to eat raw sugar. Used in soda, candies and cakes
 
 ATSnowberryGinDrunkDesc,buffs,Buff,New,A strong taste. You are feeling destructive.
 ATVodkaDrunkDesc,buffs,Buff,New,That stuff burns. You feel more talkative
@@ -80,7 +80,7 @@ ATSugarRushDesc,buffs,Buff,New,A slight rush from the amount of sugar you just a
 ATSugarRushName,buffs,Buff,New,Sugar Rush
 ATSugarRushTooltip,buffs,Buff,New,That was a lot of sugar.
 
-ATEnergyTabletDesc,buffs,Buff,New,You can run faster. reload slightly quicker and become less exhausted. 
+ATEnergyTabletDesc,buffs,Buff,New,You can run faster. reload slightly quicker and become less exhausted.
 ATEnergyTabletName,buffs,Buff,New,Energy Rush
 ATEnergyTabletTooltip,buffs,Buff,New,What a rush!
 
