@@ -38,8 +38,8 @@
 				<requirement name="HasBuff" buff="buffIsOnFire"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffExtinguishFire"/>
 			</effect_group>
-		</item>		
-		<!--===Item Recipe==-->	
+		</item>
+		<!--===Item Recipe==-->
 		<item name="Berry Tea Recipe">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="EconomicValue" value="200"/>
@@ -272,7 +272,7 @@
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="EconomicValue" value="250"/>
 			<property name="CreativeMode" value="Player"/>
-			<property name="CustomIcon" value="ATMashedPotato"/>
+			<property name="CustomIcon" value="ATMashPotato"/>
 			<property name="Unlocks" value="Mashed Potato"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Mashed Potato" operation="set" value="1"/>
@@ -438,7 +438,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffIllFoodPoisoning01">
 					<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
-				</triggered_effect>				
+				</triggered_effect>
 			</effect_group>
 		</item>
 		<!--===Item Recipe==-->
@@ -596,7 +596,7 @@
 			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Morganic"/>
-			<property name="Stacknumber" value="50"/> 
+			<property name="Stacknumber" value="50"/>
 			<property name="EconomicValue" value="10"/>
 			<property name="EconomicBundleSize" value="1"/>
 			<property class="Action0">
@@ -964,8 +964,8 @@
 				<requirement name="HasBuff" buff="buffIsOnFire"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffExtinguishFire"/>
 			</effect_group>
-		</item>		
-		<!--===Item Recipe==-->	
+		</item>
+		<!--===Item Recipe==-->
 		<item name="Blueberry Soda Recipe">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="EconomicValue" value="200"/>
@@ -1014,8 +1014,8 @@
 				<requirement name="HasBuff" buff="buffIsOnFire"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffExtinguishFire"/>
 			</effect_group>
-		</item>		
-		<!--===Item Recipe==-->	
+		</item>
+		<!--===Item Recipe==-->
 		<item name="Kvass Soda Recipe">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="EconomicValue" value="200"/>
@@ -1069,8 +1069,8 @@
 				<requirement name="HasBuff" buff="buffIsOnFire"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffExtinguishFire"/>
 			</effect_group>
-		</item>		
-		<!--===Item Recipe==-->	
+		</item>
+		<!--===Item Recipe==-->
 		<item name="Carbonated Water Recipe">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="EconomicValue" value="200"/>
@@ -1117,7 +1117,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="ATbuffVodka"/>
 			</effect_group>
 		</item>
-		<!--===Item Recipe==-->	
+		<!--===Item Recipe==-->
 		<item name="Distilled Vodka Recipe">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="EconomicValue" value="200"/>
@@ -1161,7 +1161,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="ATbuffSnowberryGin"/>
 			</effect_group>
 		</item>
-		<!--===Item Recipe==-->	
+		<!--===Item Recipe==-->
 		<item name="Snowberry Gin Recipe">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="EconomicValue" value="200"/>
@@ -1438,7 +1438,7 @@
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="EconomicValue" value="300"/>
 			<property name="CreativeMode" value="Player"/>
-			<property name="CustomIcon" value="ATFudge"/>
+			<property name="CustomIcon" value="ATEnergyTablet"/>
 			<property name="Unlocks" value="Energy Tablet"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Energy Tablet" operation="set" value="1"/>

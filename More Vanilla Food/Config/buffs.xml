@@ -26,7 +26,7 @@
 		<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" effect_name="Drunk"/>
 		</effect_group>
 	</buff>
-	
+
 	<buff name="ATbuffVodka" name_key="buffDrunk01Name" description_key="ATVodkaDrunkDesc" tooltip_key="buffDrunk01Tooltip" icon="ui_game_symbol_beer">
 		<damage_type value="disease"/>
 		<stack_type value="replace"/><duration value="0"/>
@@ -77,9 +77,11 @@
 			<passive_effect name="WaterChangeOT" operation="base_subtract" value="0.3"/>
 			<passive_effect name="RunSpeed" operation="perc_add" value=".5"/>
 			<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="1.2"/> <!-- regening stamina costs you water -->
-			<passive_effect name="StaminaLossMaxMult" operation="perc_add" value="1.75"/> <!-- regening stamina costs food, blacks out the stamina bar -->
-		</effect_group>
-	
+      <!-- DOUGH: This appears to no longer ba a valid effect -->
+			<!-- <passive_effect name="StaminaLossMaxMult" operation="perc_add" value="1.75"/> --> <!-- regening stamina costs food, blacks out the stamina bar -->
+
+    </effect_group>
+
 		<effect_group>
 			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="ATbuffEnergyTabletSideEffect"/>
 			<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="ATbuffEnergyTabletSideEffect">
@@ -97,7 +99,7 @@
 				<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="buffPerkAbilityUpdate"/>
 		</effect_group>
 	</buff>
-	
+
 	<buff name="ATbuffSugarRush" name_key="ATSugarRushName" description_key="ATSugarRushDesc" tooltip_key="ATSugarRushTooltip" icon="ATCandyIcon">
 		<stack_type value="replace"/><duration value="0"/>
 		<display_value value=".ATbuffSugarRushDisplay"/><display_value_format value="time"/>
@@ -117,10 +119,11 @@
 			<passive_effect name="WaterChangeOT" operation="base_subtract" value="0.05"/>
 			<passive_effect name="RunSpeed" operation="perc_add" value=".15"/>
 			<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="1.05"/> <!-- regening stamina costs you water -->
-			<passive_effect name="StaminaLossMaxMult" operation="perc_add" value="0.1"/> <!-- regening stamina costs food, blacks out the stamina bar -->
+      <!-- DOUGH: This appears to no longer ba a valid effect -->
+      <!-- <passive_effect name="StaminaLossMaxMult" operation="perc_add" value="0.1"/> --> <!-- regening stamina costs food, blacks out the stamina bar -->
 		</effect_group>
 	</buff>
-	
+
 	<buff name="ATbuffColdDrink" name_key="ATColdDrinkName" description_key="ATColdDrinkDesc" icon="ATIceDrink">
 		<stack_type value="replace"/><duration value="0"/>
 		<display_value value=".ATbuffColdDrinkDisplay"/><display_value_format value="time"/>
@@ -139,5 +142,5 @@
 			<passive_effect name="HyperthermalResist" operation="base_add" value="30"/>
 		</effect_group>
 	</buff>
-</append>	
+</append>
 </configs>

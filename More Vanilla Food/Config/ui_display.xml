@@ -1,45 +1,54 @@
 <configs>
+  <!-- DOUGH: Cannot see foods that require chemistry station unless search by name
+    because chemsitry station does not ahve a "food" item list.
+    This makes them show up.  This also seems to fix a bug in the game as other vanilla
+    recipes show up here.
+  -->
+  <append xpath="/ui_display_info/crafting_category_display/crafting_category_list[@display_type='chemistryStation']">
+    <crafting_category name="Food/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFoodCooking" />
+  </append>
+
 	<append xpath="/ui_display_info/item_display">
 
-			<item_display_info display_type="ATEnergyTabletDisplay" display_group="groupConsumables">
-				<display_entry name="dReloadSpeedMultiplier" title_key="xuiSkillReloadSpeed" display_type="Percent" display_leading_plus="true"/>
-				<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
-				<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent"/>
-				<display_entry name="dRunSpeed" title_key="statRunSpeed" display_type="Percent" display_leading_plus="true"/>
-				<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
-			</item_display_info>
-		
-			<item_display_info display_type="ATSnowberryGinDisplay" display_group="groupConsumables">
-				<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent" display_leading_plus="true"/>
-				<display_entry name="dBlockDamage" title_key="xuiSkillBlockDamage" display_type="Percent"/>
-				<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
-			</item_display_info>
-			
-			<item_display_info display_type="ATVodkaDisplay" display_group="groupConsumables">
-				<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent" display_leading_plus="true"/>
-				<display_entry name="dBartering" title_key="statBartering" display_type="Percent" display_leading_plus="true"/>
-				<display_entry name="dStunResist" title_key="statStunResist" display_type="Percent" display_leading_plus="true"/>
-				<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
-			</item_display_info>
+		<item_display_info display_type="ATEnergyTabletDisplay" display_group="groupConsumables">
+			<display_entry name="dReloadSpeedMultiplier" title_key="xuiSkillReloadSpeed" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
+			<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent"/>
+			<display_entry name="dRunSpeed" title_key="statRunSpeed" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+		</item_display_info>
+
+		<item_display_info display_type="ATSnowberryGinDisplay" display_group="groupConsumables">
+			<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="dBlockDamage" title_key="xuiSkillBlockDamage" display_type="Percent"/>
+			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+		</item_display_info>
+
+		<item_display_info display_type="ATVodkaDisplay" display_group="groupConsumables">
+			<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent" display_leading_plus="true"/>
+      <display_entry name="dBartering" title_key="statBarteringSellBuy" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="dStunResist" title_key="statStunResist" display_type="Percent" display_leading_plus="true"/>
+			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+		</item_display_info>
 
 		<item_display_info display_type="ATHungerDrinkDisplay" display_group="groupConsumables">
 			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
 			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
 			<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent"/>
 		</item_display_info>
-		
+
 		<item_display_info display_type="ATSnowberryCandyDisplay" display_group="groupConsumables">
 			<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
 			<display_entry name="dEfficientDigestion" title_key="statEfficientDigestion" display_type="Percent" display_leading_plus="true"/>
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
 		</item_display_info>
-		
+
 		<item_display_info display_type="ATWaterHealthDisplay" display_group="groupConsumables">
 			<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
 			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
 			<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent"/>
 		</item_display_info>
-		
+
 		<item_display_info display_type="ATIceDrinkDisplay" display_group="groupConsumables">
 			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
 			<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent"/>
@@ -47,6 +56,5 @@
 			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
 		</item_display_info>
 	</append>
+
 </configs>
-
-
