@@ -1,88 +1,88 @@
-Key,Source,Context,Changes,English
-ATBerryTeaDesc,items,Food,New,A warm healing tea made from blueberries and snowberries
+Key,Source,Context,Changes,English,Spanish
+ATBerryTeaDesc,items,Food,New,A warm healing tea made from blueberries and snowberries,Un té de sanación cálido hecho con arándanos y sinforicarpos
 
-ATMixedTeaDesc,items,Food,New,A cool refreshing mixed herbal tea that helps protect against the cold
+ATMixedTeaDesc,items,Food,New,A cool refreshing mixed herbal tea that helps protect against the cold,Un té de hierbas mixto y refrescante que ayuda a protegerte contra el frío
 
-ATIcedCoffeeDesc,items,Food,New,A cool energising iced coffee that helps protect against the cold whilst remaining just as hydrating as the hot counterpart
+ATIcedCoffeeDesc,items,Food,New,A cool energising iced coffee that helps protect against the cold whilst remaining just as hydrating as the hot counterpart,Un café helado energizante que ayuda a protegerte contra el frío sin dejar de ser tan hidratante como la contraparte caliente
 
-ATYuccaChipsDesc,items,Food,New,A handful of hearty wedge cut yucca chips
+ATYuccaChipsDesc,items,Food,New,A handful of hearty wedge cut yucca chips,Un puñado de chips de yuca cortados en cuña
 
-ATHashbrownDesc,items,Food,New,A small triangle of shredded fried potato. A nice snack
+ATHashbrownDesc,items,Food,New,A small triangle of shredded fried potato. A nice snack,Un triángulo de patata cortado pequeño. Un buen snack
 
-ATMashPotatoDesc,items,Food,New,This hefty pot of silky smooth mash potato could be a meal on it's own
+ATMashPotatoDesc,items,Food,New,This hefty pot of silky smooth mash potato could be a meal on it's own,Esta gran olla de puré de patatas suave podría ser una comida por sí sola
 
-ATCornGritsDesc,items,Food,New,A warm pot of boiled corn grits with animal fat
+ATCornGritsDesc,items,Food,New,A warm pot of boiled corn grits with animal fat,Una olla caliente de sémola de maíz hervida con grasa animal
 
-ATBlueberryJamDesc,items,Food,New,Sweet blueberry jam made from rendered fruits. Maybe too sweet on it's own
+ATBlueberryJamDesc,items,Food,New,Sweet blueberry jam made from rendered fruits. Maybe too sweet on it's own,Mermelada de arándanos dulce elaborada a partir de frutos extraídos. Quizás demasiado dulce por sí solo
 
-ATYuccaJamDesc,items,Food,New,Surprisingly savory whilst still being sweet. Yucca jam is made from rendered down yucca fruit
+ATYuccaJamDesc,items,Food,New,Surprisingly savory whilst still being sweet. Yucca jam is made from rendered down yucca fruit,Sorprendentemente sabroso y al mismo tiempo dulce. La mermelada de yuca está hecha de fruta de yuca fundida
 
-ATEggSaladDesc,items,Food,New,A basic egg salad made from boiled eggs. Boiled potato and oil dressing
+ATEggSaladDesc,items,Food,New,A basic egg salad made from boiled eggs. Boiled potato and oil dressing,Ensalada de huevo básica hecha con huevos cocidos. Aderezo de patata hervida y aceite.
 
-ATFriedMeatDesc,items,Food,New,Meat that has been fried in a cornmeal coating
+ATFriedMeatDesc,items,Food,New,Meat that has been fried in a cornmeal coating,Carne frita cubierta de harina de maíz
 
-ATCornChipsDesc,items,Food,New,Crispy fried corn chips that make for a nice snack between bashing skulls in
+ATCornChipsDesc,items,Food,New,Crispy fried corn chips that make for a nice snack between bashing skulls in,Maíz frito crujiente que se hace un buen snack para reventar cráneos
 
-ATBBJamSandwichDesc,items,Food,New,A simple cornbread sandwich with a sweet blueberry jam filling to help recover from a long day
+ATBBJamSandwichDesc,items,Food,New,A simple cornbread sandwich with a sweet blueberry jam filling to help recover from a long day,Un simple sándwich de pan de maíz con rellena con mermelada de arándanos dulces para ayudar a recuperarse de un largo día
 
-ATYuccaJamSandwichDesc,items,Food,New,A simple cornbread sandwich with a savory yucca jam filling that helps get rid of even the strongest hunger pangs
+ATYuccaJamSandwichDesc,items,Food,New,A simple cornbread sandwich with a savory yucca jam filling that helps get rid of even the strongest hunger pangs,Simple bocata de maíz relleno con sabrosa mermelada de yuca que ayuda a eliminar esos dolores de tripa molestos del hambre
 
-ATCoffeeCakeDesc,items,Food,New,This cake offers the energising properties of coffee whilst still being delicious
+ATCoffeeCakeDesc,items,Food,New,This cake offers the energising properties of coffee whilst still being delicious,Esta tarta ofrece propiedades energizantes del café mientras sigue siendo delicioso
 
-ATMushroomPieDesc,items,Food,New,Savory and buttery pie crust filled to the brim with mushrooms
+ATMushroomPieDesc,items,Food,New,Savory and buttery pie crust filled to the brim with mushrooms,Pastel de mantequilla sabrosa rellena hasta el borde de champiñones. 
 
-ATMeatAndBeerPieDesc,items,Food,New,Rich and savory pie crust with a meat and beer filling. Truly a feast fit for the best of the best
+ATMeatAndBeerPieDesc,items,Food,New,Rich and savory pie crust with a meat and beer filling. Truly a feast fit for the best of the best,Rico y sabroso pastel de mantequilla con carne y relleno de cerveza
 
-ATFriedMushroomsDesc,items,Food,New,Whole mushrooms coated in cornmeal and fried. A very filling snack
+ATFriedMushroomsDesc,items,Food,New,Whole mushrooms coated in cornmeal and fried. A very filling snack,Champiñones fritos bañados en harina de maíz. Un snack muy abundante 
 
-ATFriedEggDesc,items,Food,New,A simple sunny side up fried egg. The main component of any good breakfast
+ATFriedEggDesc,items,Food,New,A simple sunny side up fried egg. The main component of any good breakfast,Un sonriente huevo frito. El buen desayuno para personas no españolas (Donde esté el colacao que me quiten lo bailao)
 
-ATFrenchToastDesc,items,Food,New,Egg soaked cornbread that has been fried. Simple yet tasty
+ATFrenchToastDesc,items,Food,New,Egg soaked cornbread that has been fried. Simple yet tasty, Bocata de maíz cocinado con huevo frito. Simple y sabroso
 
-ATHoneyGlazedMeatDesc,items,Food,New,Roasted meat with a deep honey glaze covering it
+ATHoneyGlazedMeatDesc,items,Food,New,Roasted meat with a deep honey glaze covering it,Carne asada con un glaseado de miel cubriéndolo
 
-ATBlueberrySodaDesc,items,Food,New,A refreshing carbonated soda made from blueberries
+ATBlueberrySodaDesc,items,Food,New,A refreshing carbonated soda made from blueberries,Una bebida energética hecha con arándanos
 
-ATCarbonatedWaterDesc,items,Food,New,Carbonated water that is both refreshing and useful for digestion
+ATCarbonatedWaterDesc,items,Food,New,Carbonated water that is both refreshing and useful for digestion,Agua carbonatada que es refrescante y muy útil para la digestión
 
-ATKvassSodaDesc,items,Food,New,Kvass soda made from fermented cornbread to make it carbonated. A very basic soda
+ATKvassSodaDesc,items,Food,New,Kvass soda made from fermented cornbread to make it carbonated. A very basic soda, Bebida Kvas hecho con pan de maíz fermentado para hacerlo cabornatado. Una bebida básica
 
-ATVodkaDesc,items,Food,New,Fermented and distilled potato water that will improve your bartering. This stuff packs a punch
+ATVodkaDesc,items,Food,New,Fermented and distilled potato water that will improve your bartering. This stuff packs a punch,
 
-ATSnowberryGinDesc,items,Food,New,A dry gin made from snowberries that will boost your ability to break blocks
+ATSnowberryGinDesc,items,Food,New,A dry gin made from snowberries that will boost your ability to break blocks,Ginebra seca hecha con sinforcarpios que aumentaran tus habilidades para romper bloques
 
-ATBlueberrySpongeDesc,items,Food,New,Fluffy sponge cake with a very sweet blueberry jam filling. Filling for both the body and soul.
+ATBlueberrySpongeDesc,items,Food,New,Fluffy sponge cake with a very sweet blueberry jam filling. Filling for both the body and soul.,Bizcocho esponjoso relleno de mermelada de arándanos muy dulces. Saciando el cuerpo y alma.
 
-ATYuccaSpongeDesc,items,Food,New,Sweet and fluffy sponge cake with a somewhat savory yucca jam filling. Extremely filling
+ATYuccaSpongeDesc,items,Food,New,Sweet and fluffy sponge cake with a somewhat savory yucca jam filling. Extremely filling,Bizcocho dulce y esponjoso con un relleno de yuca sabroso. Extremadamente saciante
 
-ATCustardPieDesc,items,Food,New,Buttery pie crust filled to the brim with a dense custard.
+ATCustardPieDesc,items,Food,New,Buttery pie crust filled to the brim with a dense custard.,Pastel relleno de mantequilla hasta el borde con crema densa.
 
-ATEnergyTabletDesc,items,Food,New,Energy tablets are great for getting you out of sticky situations. However you can get addicted to them.
+ATEnergyTabletDesc,items,Food,New,Energy tablets are great for getting you out of sticky situations. However you can get addicted to them.,Las barritas energéticas son buenas para sacarte de situaciones difíciles. Sin embargo crean adicción.
 
-ATFudgeDesc,items,Food,New,Sugary fudge that melts in the mouth and rots away the teeth. You didn't need those molars anyway
+ATFudgeDesc,items,Food,New,Sugary fudge that melts in the mouth and rots away the teeth. You didn't need those molars anyway,Dulce de azúcar que se disuelve en tu boca y pudre tus dientes. De todas maneras te esos molares ya no los necesitas
 
-ATPopcornDesc,items,Food,New,Popped corn - the movie-goers favourite. A basic snack between meals
+ATPopcornDesc,items,Food,New,Popped corn - the movie-goers favourite. A basic snack between meals, Palomitas de maíz - Favorito de los peliculeros. Un snack básico entre comidas
 
-ATRockCandyDesc,items,Food,New,Unflavoured candy made mostly from sugar. Will give you quite the sugar rush
+ATRockCandyDesc,items,Food,New,Unflavoured candy made mostly from sugar. Will give you quite the sugar rush,Caramelo sin sabor hecho mayormente con azúcar. Te dara un buen subidón de azúcar
 
-ATRockCandyBlueberryDesc,items,Food,New,Blueberry flavoured rock candy that tastes good and will give you a sugar rush
+ATRockCandyBlueberryDesc,items,Food,New,Blueberry flavoured rock candy that tastes good and will give you a sugar rush,
 
-ATRockCandySnowberryDesc,items,Food,New,Snowberry infused rock candy that will help with digestion and give you a sugar rush
+ATRockCandySnowberryDesc,items,Food,New,Snowberry infused rock candy that will help with digestion and give you a sugar rush,Sinforcarpio con infusión de caramelo de roca que te ayudarña a con la digestión y te da un subidón de azúcar.
 
-ATSpongeCakeDesc,items,Food,New,Dense sponge cake with sugar icing atop it.
+ATSpongeCakeDesc,items,Food,New,Dense sponge cake with sugar icing atop it.,Tarta esponjosa densa con glaseado de azúcar encima.
 
-ATSugarExtractDesc,items,Food,New,You'd have to be pretty desperate to eat raw sugar. Used in soda, candies and cakes
+ATSugarExtractDesc,items,Food,New,You'd have to be pretty desperate to eat raw sugar. Used in soda, candies and cakes,Tienes que sentirte muy desesperado para comer azúcar en bruto. Usado en soda, caramelos y tartas.
 
-ATSnowberryGinDrunkDesc,buffs,Buff,New,A strong taste. You are feeling destructive.
-ATVodkaDrunkDesc,buffs,Buff,New,That stuff burns. You feel more talkative
+ATSnowberryGinDrunkDesc,buffs,Buff,New,A strong taste. You are feeling destructive.,Un sabor fuerte. Te sientes destructivo.
+ATVodkaDrunkDesc,buffs,Buff,New,That stuff burns. You feel more talkative,Esa cosa arde. Te sientes más elocuente.
 
-ATSugarRushDesc,buffs,Buff,New,A slight rush from the amount of sugar you just ate. This allows you to slightly run faster
-ATSugarRushName,buffs,Buff,New,Sugar Rush
-ATSugarRushTooltip,buffs,Buff,New,That was a lot of sugar.
+ATSugarRushDesc,buffs,Buff,New,A slight rush from the amount of sugar you just ate. This allows you to slightly run faster,Un pequeño subidón de un montón de azúcar que te has comido, Esto te permite correr ligeramente más rápido
+ATSugarRushName,buffs,Buff,New,Sugar Rush,Subidón de azúcar
+ATSugarRushTooltip,buffs,Buff,New,That was a lot of sugar.,Eso era muchísimo azúcar.
 
-ATEnergyTabletDesc,buffs,Buff,New,You can run faster. reload slightly quicker and become less exhausted.
-ATEnergyTabletName,buffs,Buff,New,Energy Rush
-ATEnergyTabletTooltip,buffs,Buff,New,What a rush!
+ATEnergyTabletDesc,buffs,Buff,New,You can run faster. reload slightly quicker and become less exhausted.,Puedes correr más rápido. Recargar ligeramente rápido y agotarte menos.
+ATEnergyTabletName,buffs,Buff,New,Energy Rush,Subidón de energía
+ATEnergyTabletTooltip,buffs,Buff,New,What a rush!,¡Qué subidón!
 
-ATColdDrinkName,buffs,Buff,New,Cold Drink
-ATColdDrinkDesc,buffs,Buff,New,Iced drinks help you survive better in hot environments.
+ATColdDrinkName,buffs,Buff,New,Cold Drink,Bebida Fría
+ATColdDrinkDesc,buffs,Buff,New,Iced drinks help you survive better in hot environments.,Bebida helada que te ayuda a sobrevivir en ambientes cálidos.
